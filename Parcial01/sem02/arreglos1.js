@@ -2,6 +2,7 @@ const platos=[
     "encebollado",
     "tigrillo",
     "bolon",
+    "corviche",
     "sanduche",
     "ceviche"
 ]
