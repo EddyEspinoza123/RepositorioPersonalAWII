@@ -1,0 +1,11 @@
+{
+  "name": "trabajopractico01",
+  "version": "1.0.0",
+  "description": "Trabajo Practico 01",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eddy",
+  "license": "ISC"
+}
