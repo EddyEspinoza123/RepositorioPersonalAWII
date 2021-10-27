@@ -66,11 +66,11 @@ function buscarautorporid(id)
 
 }
 
-/*buscarlibroporid(1).then((libro)=>{
+buscarlibroporid(1).then((libro)=>{
   console.log(libro);
 }).catch((error)=>{
   console.log(error.message);
-})*/
+})
   
 /*let libroauxiliar;
 buscarlibroporid(1).then((libro)=>{
@@ -83,11 +83,11 @@ buscarlibroporid(1).then((libro)=>{
   console.log(error.message);
 })*/
 
-buscarlibroporid(1).then((libro)=>{
+/*buscarlibroporid(1).then((libro)=>{
   return buscarlibroporid(libro);
 }).then((libro)=>{
   console.log(libro)
 }).catch((error)=>{
   console.log(error.message)
-})
+})*/
 
