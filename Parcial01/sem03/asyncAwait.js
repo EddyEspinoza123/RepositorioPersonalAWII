@@ -31,7 +31,7 @@ const autores = [
   },
 ]
 
-async function buscarlibroporid(){
+async function buscarlibroporid(id){
   const libro = libros.find((libro)=> libro.id===id);
   if(!libro)
   {
@@ -42,16 +42,30 @@ async function buscarlibroporid(){
   return libro;
 
 }
-async function buscarautorporid(){
-
+async function buscarautorporid(id){
+  const autor = autores.find((autor)=>{
+    return autor.id === id;
+  })
+  if(!autor)
+  {
+    const error = new Error();
+    error.message="No encontramos el autor";
+    throw error;
+  }
+  return autor;
 
 }
 
-async function main()
+libros.forEach( async (libros)=>{
+  const librox = await buscarlibroporid(libro.id);
+  console.log(libros);
+})
+
+/*async function main()
 {
   const libro = await buscarlibroporid(1);
   const autor = await buscarautorporid(libro.idautor);
   libro.autor = autor;
   console.log(libro);
 }
-main();
+main();*/
