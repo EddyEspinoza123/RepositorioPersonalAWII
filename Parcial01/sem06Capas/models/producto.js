@@ -27,6 +27,7 @@ const ProductoShema = Schema(
 
   }
 );
+
 ProductoShema.methods.toJSON = function(){
   const { __v, estado, ...data } = this.toObject();
   return data;
