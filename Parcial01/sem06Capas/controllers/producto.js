@@ -10,7 +10,10 @@ const { Producto } = require('../models')
 
     const [ total, productos ] = await Promise.all([
         Producto.countDocuments(query),
-        Producto.find(query).skip(Number(desde)).limit(Number(limite))
+        Producto.find(query)
+        .populate('categoria','nombre estado')
+        .skip(Number(desde))
+        .limit(Number(limite))
     ])
 
     res.json({

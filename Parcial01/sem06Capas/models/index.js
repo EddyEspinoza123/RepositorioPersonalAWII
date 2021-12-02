@@ -3,5 +3,5 @@ const Categoria = require('./categoria');
 
 module.exports={
   Producto,
-  Categoria
+  Categoria,
 }

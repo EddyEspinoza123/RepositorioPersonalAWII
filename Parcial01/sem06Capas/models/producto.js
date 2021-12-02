@@ -24,9 +24,15 @@ const ProductoShema = Schema(
       type: Number,
       default: 0
     },
+    categoria: {
+      type:Schema.Types.ObjectId,
+      ref: 'Categoria',
+      required:true
+    }
 
   }
 );
+
 
 ProductoShema.methods.toJSON = function(){
   const { __v, estado, ...data } = this.toObject();
