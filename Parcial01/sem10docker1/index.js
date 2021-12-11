@@ -1,6 +1,6 @@
 let contador =0;
 
-for (;;)
+for(;;)
 {
   console.log(contador++);
 }
