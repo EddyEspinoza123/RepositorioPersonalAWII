@@ -44,7 +44,7 @@
         }).then(res=> res.json())
         .then(resultado=> console.log(resultado))
         .catch(error=> console.log)
-        // FIXME mostrar por consola resultado
+        
     })
     btnmodificar.addEventListener('click', function(){
         let url=`http://localhost:5000/v1/inventario/api/productos/${txtid.value}`;
